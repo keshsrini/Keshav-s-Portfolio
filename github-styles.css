@@ -1,0 +1,193 @@
+/* GitHub Section - GitHub Dark Theme Style */
+.github-calendar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #0d1117;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    border: 1px solid #30363d;
+}
+
+.github-profile {
+    background-color: #161b22;
+    padding: 2rem;
+    border-bottom: 1px solid #30363d;
+}
+
+.github-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#github-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#github-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.github-profile-info {
+    flex: 1;
+}
+
+#github-name {
+    font-size: 1.5rem;
+    color: #e6edf3;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+#github-username {
+    color: #8b949e;
+    font-size: 1rem;
+}
+
+.github-stats-summary {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.github-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #0d1117;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+}
+
+.github-stat span:first-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e6edf3;
+}
+
+.github-stat span:last-child {
+    font-size: 0.875rem;
+    color: #8b949e;
+}
+
+.github-calendar-wrapper {
+    padding: 1.5rem;
+    background-color: #0d1117;
+}
+
+.calendar {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Override GitHub calendar styles to match GitHub dark theme */
+:root {
+    --color-calendar-graph-day-bg: #161b22;
+    --color-calendar-graph-day-border: #1b222c;
+    --color-calendar-graph-day-L1-bg: #0e4429;
+    --color-calendar-graph-day-L2-bg: #006d32;
+    --color-calendar-graph-day-L3-bg: #26a641;
+    --color-calendar-graph-day-L4-bg: #39d353;
+}
+
+.calendar .js-calendar-graph-svg {
+    background-color: #0d1117 !important;
+}
+
+.calendar .contrib-column {
+    color: #8b949e !important;
+    font-size: 0.875rem !important;
+}
+
+.calendar .contrib-number {
+    color: #e6edf3 !important;
+    font-weight: 600 !important;
+}
+
+.calendar .text-muted {
+    color: #8b949e !important;
+}
+
+.calendar .float-left.text-gray {
+    color: #8b949e !important;
+}
+
+.github-contribution-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+}
+
+.contribution-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contribution-stat .octicon {
+    margin-bottom: 0.5rem;
+}
+
+.contribution-stat span:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e6edf3;
+    margin-bottom: 0.25rem;
+}
+
+.contribution-stat span:last-child {
+    font-size: 0.875rem;
+    color: #8b949e;
+}
+
+.github-stats {
+    padding: 1.5rem;
+    background-color: #161b22;
+    text-align: center;
+}
+
+.github-profile-link {
+    color: #e6edf3;
+    background-color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+}
+
+.github-profile-link:hover {
+    background-color: #2ea043;
+}
+
+@media (max-width: 768px) {
+    .github-profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .github-stats-summary {
+        justify-content: center;
+    }
+    
+    .github-contribution-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

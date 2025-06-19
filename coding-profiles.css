@@ -1,0 +1,369 @@
+#coding-profiles {
+    padding: 5rem 2rem;
+}
+
+.profile-container {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 3rem 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.github-container {
+    background-color: #0d1117;
+}
+
+.leetcode-container {
+    background-color: #1a1a1a;
+}
+
+.profile-container:last-child {
+    margin-bottom: 0;
+}
+
+/* GitHub Profile Styling */
+.github-profile h3,
+.leetcode-profile h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.github-content,
+.leetcode-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.github-calendar {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+}
+
+.github-heatmap {
+    width: 100%;
+    height: auto;
+    filter: brightness(1.1);
+}
+
+.github-profile-btn,
+.leetcode-profile-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: #0d1117;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.github-profile-btn:hover,
+.leetcode-profile-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+/* LeetCode Profile Styling */
+.leetcode-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Main Stats (Rating & Ranking) */
+.leetcode-main-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.leetcode-rating, .leetcode-rank, .leetcode-total {
+    text-align: center;
+}
+
+.rating-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffc01e;
+    display: block;
+}
+
+.rating-label, .rank-label, .total-label {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.rank-number, .total-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: block;
+}
+
+/* Problem Stats */
+.leetcode-problem-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.stat-item {
+    padding: 1rem;
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+}
+
+.stat-item.easy {
+    background-color: rgba(0, 184, 163, 0.2);
+    border: 1px solid #00b8a3;
+}
+
+.stat-item.medium {
+    background-color: rgba(255, 192, 30, 0.2);
+    border: 1px solid #ffc01e;
+}
+
+.stat-item.hard {
+    background-color: rgba(239, 71, 67, 0.2);
+    border: 1px solid #ef4743;
+}
+
+.stat-count {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.stat-item.easy .stat-count {
+    color: #00b8a3;
+}
+
+.stat-item.medium .stat-count {
+    color: #ffc01e;
+}
+
+.stat-item.hard .stat-count {
+    color: #ef4743;
+}
+
+.stat-type {
+    font-size: 0.9rem;
+    color: #ccc;
+    display: block;
+}
+
+.stat-total {
+    font-size: 0.8rem;
+    color: #999;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+/* Activity Stats */
+.leetcode-activity {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.activity-stat {
+    text-align: center;
+}
+
+.activity-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: block;
+}
+
+.activity-label {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Badges */
+.leetcode-badges {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.badge-count {
+    margin-bottom: 0.5rem;
+}
+
+.badge-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.badge-label {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.leetcode-badge-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.leetcode-badge-img {
+    width: 80px;
+    height: auto;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.leetcode-badge-img:hover {
+    transform: scale(1.1);
+}
+
+/* Profile buttons styling */
+.profile-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.github-btn {
+    background-color: var(--accent-color);
+    color: #0d1117;
+}
+
+.leetcode-btn {
+    background-color: var(--accent-color);
+    color: #1a1a1a;
+}
+
+.profile-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+/* LeetCode Header with Logo */
+.leetcode-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.leetcode-logo {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.leetcode-header h3 {
+    margin: 0;
+}
+/* GitHub Header with Logo */
+.github-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.github-logo {
+    height: 40px;
+    margin-right: 1rem;
+    filter: brightness(10); /* Make GitHub logo white */
+}
+/* Tab System for Coding Profiles */
+.profile-tabs {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.8rem 2rem;
+    background-color: rgba(23, 42, 69, 0.4);
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.tab-btn:hover {
+    background-color: rgba(23, 42, 69, 0.6);
+    transform: translateY(-3px);
+}
+
+.tab-btn.active {
+    background-color: rgba(100, 255, 218, 0.2);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+}
+
+.tab-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Update profile containers for tabs */
+.profile-container {
+    background-color: rgba(23, 42, 69, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.github-container {
+    background-color: rgba(13, 17, 23, 0.7);
+}
+
+.leetcode-container {
+    background-color: rgba(26, 26, 26, 0.7);
+}

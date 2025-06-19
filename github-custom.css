@@ -1,0 +1,22 @@
+/* Hide unwanted GitHub calendar elements */
+.calendar .float-left.text-gray,
+.calendar .contrib-column.contrib-column-first.table-column,
+.calendar .contrib-column.table-column,
+.calendar .contrib-footer {
+    display: none !important;
+}
+
+/* Add custom styles for the calendar */
+.calendar {
+    padding-top: 10px;
+}
+
+/* Override GitHub calendar styles */
+.calendar .width-full > .float-left {
+    display: none;
+}
+
+/* Hide the text "Rock - Hard Place" */
+.calendar .text-muted {
+    display: none;
+}
